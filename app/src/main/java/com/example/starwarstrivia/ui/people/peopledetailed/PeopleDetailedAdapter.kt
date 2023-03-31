@@ -16,7 +16,8 @@ class PeopleDetailedAdapter(val people: List<PeopleModel>) :
         private val binding = ItemPeopleDetailsBinding.bind(view)
 
         fun handleData(item: PeopleModel?){
-
+            for(items in item?.results!!)
+                binding.textView.text = items.toString()
         }
     }
 
