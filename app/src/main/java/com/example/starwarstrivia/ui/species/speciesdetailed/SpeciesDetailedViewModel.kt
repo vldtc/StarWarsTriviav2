@@ -9,5 +9,4 @@ import javax.inject.Inject
 class SpeciesDetailedViewModel @Inject constructor(
     val repository: Repository
 ): ViewModel() {
-    // TODO: Implement the ViewModel
 }

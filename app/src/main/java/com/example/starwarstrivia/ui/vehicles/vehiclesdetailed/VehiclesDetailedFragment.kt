@@ -13,7 +13,9 @@ import com.example.starwarstrivia.databinding.FragmentSpeciesDetailedBinding
 import com.example.starwarstrivia.databinding.FragmentVehiclesDetailedBinding
 import com.example.starwarstrivia.ui.people.PeopleViewModel
 import com.example.starwarstrivia.ui.species.speciesdetailed.SpeciesDetailedViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class VehiclesDetailedFragment : Fragment() {
 
     private var _binding: FragmentVehiclesDetailedBinding? = null
