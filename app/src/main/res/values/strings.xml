@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StarWarsTrivia</string>
+<!--    Page names-->
+    <string name="title_people">People</string>
+    <string name="title_species">Species</string>
+    <string name="title_planets">Planets</string>
+    <string name="title_starships">Starships</string>
+    <string name="title_vehicles">Vehicles</string>
+    <string name="title_detailed_view">Detailed View</string>
+</resources>

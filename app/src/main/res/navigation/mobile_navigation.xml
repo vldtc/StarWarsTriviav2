@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_people">
+
+    <fragment
+        android:id="@+id/nav_people"
+        android:name="com.example.starwarstrivia.ui.people.PeopleFragment"
+        android:label="@string/title_people"
+        tools:layout="@layout/fragment_people" >
+        <action
+            android:id="@+id/action_PeopleDetailed"
+            app:destination="@id/nav_people_detailed" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_species"
+        android:name="com.example.starwarstrivia.ui.species.SpeciesFragment"
+        android:label="@string/title_species"
+        tools:layout="@layout/fragment_species" >
+        <action
+            android:id="@+id/action_SpeciesDetailed"
+            app:destination="@id/nav_species_detailed" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_planets"
+        android:name="com.example.starwarstrivia.ui.planets.PlanetsFragment"
+        android:label="@string/title_planets"
+        tools:layout="@layout/fragment_planets" >
+        <action
+            android:id="@+id/action_PlanetsDetailed"
+            app:destination="@id/nav_planets_detailed" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_starships"
+        android:name="com.example.starwarstrivia.ui.starships.StarshipsFragment"
+        android:label="@string/title_starships"
+        tools:layout="@layout/fragment_starships" >
+        <action
+            android:id="@+id/action_nav_starships_to_starshipsFragment"
+            app:destination="@id/nav_starships_detailed" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_vehicles"
+        android:name="com.example.starwarstrivia.ui.vehicles.VehiclesFragment"
+        android:label="@string/title_vehicles"
+        tools:layout="@layout/fragment_vehicles" >
+        <action
+            android:id="@+id/action_nav_vehicles_to_vehiclesFragment"
+            app:destination="@id/nav_vehicles_detailed" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_people_detailed"
+        android:name="com.example.starwarstrivia.ui.people.peopledetailed.PeopleDetailedFragment"
+        android:label="@string/title_detailed_view"
+        tools:layout="@layout/fragment_people_detailed" />
+    <fragment
+        android:id="@+id/nav_species_detailed"
+        android:name="com.example.starwarstrivia.ui.species.speciesdetailed.SpeciesDetailedFragment"
+        android:label="@string/title_detailed_view"
+        tools:layout="@layout/fragment_species_detailed" />
+    <fragment
+        android:id="@+id/nav_planets_detailed"
+        android:name="com.example.starwarstrivia.ui.planets.planetsdetailed.PlanetsDetailedFragment"
+        android:label="@string/title_detailed_view"
+        tools:layout="@layout/fragment_planets_detailed" />
+    <fragment
+        android:id="@+id/nav_starships_detailed"
+        android:name="com.example.starwarstrivia.ui.starships.starshipsdetailed.StarshipsDetailedFragment"
+        android:label="fragment_starships2"
+        tools:layout="@layout/fragment_starships_detailed" />
+    <fragment
+        android:id="@+id/nav_vehicles_detailed"
+        android:name="com.example.starwarstrivia.ui.vehicles.vehiclesdetailed.VehiclesDetailedFragment"
+        android:label="fragment_vehicles2"
+        tools:layout="@layout/fragment_vehicles_detailed" />
+</navigation>
