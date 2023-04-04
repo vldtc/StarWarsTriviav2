@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_people">
+    app:startDestination="@id/nav_login">
 
     <fragment
         android:id="@+id/nav_people"
@@ -75,4 +75,13 @@
         android:name="com.example.starwarstrivia.ui.vehicles.vehiclesdetailed.VehiclesDetailedFragment"
         android:label="fragment_vehicles2"
         tools:layout="@layout/fragment_vehicles_detailed" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.starwarstrivia.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_logged_in"
+            app:destination="@id/nav_people" />
+    </fragment>
 </navigation>

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
@@ -35,6 +36,9 @@ class PeopleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentPeopleBinding.inflate(inflater, container, false)
+
+        //Shows action bar in the login fragment
+        (activity as AppCompatActivity?)!!.supportActionBar!!.show()
 
         setupUI()
 
